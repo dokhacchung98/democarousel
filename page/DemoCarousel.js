@@ -63,14 +63,14 @@ export default class DemoCarousel extends Component {
                     // inactiveSlideShift={20}
                     containerCustomStyle={styles.slider}
                     contentContainerCustomStyle={styles.sliderContentContainer}
-                    loop={true}
-                    loopClonesPerSide={2}
-                    autoplay={true}
-                    autoplayDelay={500}
-                    autoplayInterval={3000}
-                    onSnapToItem={(index) => this.setState({ slider1ActiveSlide: index })}
+                    // loop={true}
+                    // loopClonesPerSide={2}
+                    // autoplay={true}
+                    // autoplayDelay={500}
+                    // autoplayInterval={3000}
+                    // onSnapToItem={(index) => this.setState({ slider1ActiveSlide: index })}
                 />
-                <Pagination
+                {/* <Pagination
                     dotsLength={ENTRIES1.length}
                     activeDotIndex={slider1ActiveSlide}
                     containerStyle={styles.paginationContainer}
@@ -81,7 +81,7 @@ export default class DemoCarousel extends Component {
                     inactiveDotScale={0.6}
                     carouselRef={this._slider1Ref}
                     tappableDots={!!this._slider1Ref}
-                />
+                /> */}
             </View>
         );
     }
@@ -190,9 +190,9 @@ export default class DemoCarousel extends Component {
                         scrollEventThrottle={200}
                         directionalLockEnabled={true}
                     >
-                        {/* {example1}
+                        {example1}
                         {example2}
-                        {example3} */}
+                        {example3}
                         {example4}
                         {example5}
                         {example6}
